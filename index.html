@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SME 360° Masterclass - Future-Proof Your Business in 1 Hour</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-purple': '#7C3AED',
+                        'brand-purple-dark': '#5B21B6',
+                        'brand-purple-light': '#A78BFA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%); }
+        .pulse-animation { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .floating { animation: float 3s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">Infinite Essentials</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#curriculum" class="hover:text-brand-purple-light transition-colors">Curriculum</a>
+                <a href="#packages" class="hover:text-brand-purple-light transition-colors">Packages</a>
+                <a href="#testimonials" class="hover:text-brand-purple-light transition-colors">Reviews</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="2" fill="white" class="floating" style="animation-delay: 0s;"/>
+                <circle cx="80" cy="30" r="1.5" fill="white" class="floating" style="animation-delay: 1s;"/>
+                <circle cx="60" cy="70" r="2.5" fill="white" class="floating" style="animation-delay: 2s;"/>
+                <circle cx="30" cy="80" r="1" fill="white" class="floating" style="animation-delay: 0.5s;"/>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+                <span class="text-sm font-medium">🚀 Limited Time Offer - 48 Hours Only!</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Future-Proof Your<br>
+                <span class="text-yellow-300">Business in 1 Hour</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                Transform your SME with the complete 360° business framework that successful entrepreneurs use to scale from startup to success
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
+                <button onclick="scrollToPackages()" class="bg-yellow-400 text-brand-purple-dark px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all transform hover:scale-105 pulse-animation">
+                    Get Instant Access Now
+                </button>
+                <div class="flex items-center text-white/90">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>2,847 SME owners already enrolled</span>
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-yellow-300">60 Min</div>
+                    <div class="text-white/80">Complete Training</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-yellow-300">4 Modules</div>
+                    <div class="text-white/80">Core Business Areas</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-yellow-300">3 Templates</div>
+                    <div class="text-white/80">Ready-to-Use Tools</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">
+                    Are You Stuck in the <span class="text-brand-purple">SME Struggle Cycle?</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+                        <div class="text-red-500 text-4xl mb-4">😰</div>
+                        <h3 class="font-bold text-lg mb-2">Working IN Your Business, Not ON It</h3>
+                        <p class="text-gray-600">You're the bottleneck - every decision, every task goes through you</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+                        <div class="text-red-500 text-4xl mb-4">💸</div>
+                        <h3 class="font-bold text-lg mb-2">Cash Flow Chaos</h3>
+                        <p class="text-gray-600">Money comes in, money goes out - but where? No clear financial picture</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+                        <div class="text-red-500 text-4xl mb-4">⚖️</div>
+                        <h3 class="font-bold text-lg mb-2">Legal Landmines Everywhere</h3>
+                        <p class="text-gray-600">Operating without proper structure, contracts, or compliance knowledge</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+                        <div class="text-red-500 text-4xl mb-4">📱</div>
+                        <h3 class="font-bold text-lg mb-2">Digital Stone Age</h3>
+                        <p class="text-gray-600">Competitors are online while you're still doing everything manually</p>
+                    </div>
+                </div>
+                <div class="bg-brand-purple text-white p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">The Cost of Staying Stuck</h3>
+                    <p class="text-lg">Every day you delay building proper systems, you're losing money, opportunities, and peace of mind. The businesses that survive and thrive are the ones that get their foundation right.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Preview -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                    Introducing the <span class="text-brand-purple">SME 360° Masterclass</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    The complete business transformation system that covers every critical area your SME needs to succeed in today's competitive market
+                </p>
+            </div>
+
+            <!-- Curriculum Section -->
+            <div id="curriculum" class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Module 1 -->
+                    <div class="bg-gradient-to-br from-brand-purple to-brand-purple-dark text-white p-8 rounded-xl shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-white/20 rounded-full p-3 mr-4">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Module 1: Administration & Operations</h3>
+                                <p class="text-white/80">0:00 - 0:15 (15 minutes)</p>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg mb-3">"Building a Scalable Business Structure"</h4>
+                        <ul class="space-y-2 text-white/90">
+                            <li>✓ The Importance of Business Systems (Not Just Hustle)</li>
+                            <li>✓ Basics of Delegation and HR for Small Businesses</li>
+                            <li>✓ Simple tools for productivity (Google Workspace, Trello, Notion)</li>
+                            <li>✓ Quick Case Study: SME that grew after structuring operations</li>
+                        </ul>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="bg-gradient-to-br from-blue-400 to-blue-500 text-white p-8 rounded-xl shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-white/20 rounded-full p-3 mr-4">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Module 2: Finance & Accounting</h3>
+                                <p class="text-white/80">0:15 - 0:30 (15 minutes)</p>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg mb-3">"Mastering Your Money"</h4>
+                        <ul class="space-y-2 text-white/90">
+                            <li>✓ Separating personal vs business accounts</li>
+                            <li>✓ Simple bookkeeping hacks (Excel/Google Sheets)</li>
+                            <li>✓ Tax basics & avoiding penalties</li>
+                            <li>✓ Funding options for SMEs (banks, fintechs, angel investors)</li>
+                        </ul>
+                        <div class="mt-4 bg-white/20 p-3 rounded-lg">
+                            <p class="font-semibold">🎁 Bonus: Free 1-page SME finance tracker template</p>
+                        </div>
+                    </div>
+
+                    <!-- Module 3 -->
+                    <div class="bg-gradient-to-br from-purple-400 to-purple-950 text-white p-8 rounded-xl shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-white/20 rounded-full p-3 mr-4">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Module 3: Legal & Compliance</h3>
+                                <p class="text-white/80">0:30 - 0:45 (15 minutes)</p>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg mb-3">"Protecting Your Business"</h4>
+                        <ul class="space-y-2 text-white/90">
+                            <li>✓ Business registration basics (CAC in Nigeria / equivalents)</li>
+                            <li>✓ Contracts: why every deal needs one</li>
+                            <li>✓ Intellectual Property (trademarks, copyrights)</li>
+                            <li>✓ Compliance risks & how to avoid legal trouble</li>
+                        </ul>
+                        <div class="mt-4 bg-white/20 p-3 rounded-lg">
+                            <p class="font-semibold">🎁 Bonus: Free sample service contract template</p>
+                        </div>
+                    </div>
+
+                    <!-- Module 4 -->
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-8 rounded-xl shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-white/20 rounded-full p-3 mr-4">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Module 4: Technology & Digital Tools</h3>
+                                <p class="text-white/80">0:45 - 1:00 (15 minutes)</p>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg mb-3">"Digitizing Your SME"</h4>
+                        <ul class="space-y-2 text-white/90">
+                            <li>✓ Importance of having an online presence</li>
+                            <li>✓ Tools for sales & marketing (social media, WhatsApp Business, Shopify)</li>
+                            <li>✓ Intro to AI tools that save time/cut costs</li>
+                            <li>✓ Cybersecurity basics for small businesses</li>
+                        </ul>
+                        <div class="mt-4 bg-white/20 p-3 rounded-lg">
+                            <p class="font-semibold">🎁 Bonus: Free digital toolkit list (top 10 free tools SMEs should use)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                    Choose Your <span class="text-brand-purple">Success Package</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Select the level of support that matches your business goals and budget
+                </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Package -->
+                <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-gray-200 hover:border-brand-purple transition-all">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Essential Access</h3>
+                        <div class="text-4xl font-bold text-brand-purple mb-2">₦10,000</div>
+                        <p class="text-gray-600">Perfect for getting started</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Complete 60-minute masterclass
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            All 4 core modules
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            3 free templates included
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Lifetime access to content
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Mobile-friendly access
+                        </li>
+                    </ul>
+                    <button onclick="selectPackage('basic')" class="w-full bg-brand-purple text-white py-3 rounded-lg font-semibold hover:bg-brand-purple-dark transition-colors">
+                        Get Essential Access
+                    </button>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="bg-white rounded-xl shadow-xl p-8 border-2 border-brand-purple relative transform scale-105">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-yellow-400 text-brand-purple-dark px-4 py-1 rounded-full text-sm font-bold">MOST POPULAR</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium Plus</h3>
+                        <div class="text-4xl font-bold text-brand-purple mb-2">₦25,000</div>
+                        <p class="text-gray-600">Everything + bonus resources</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <strong>Everything in Essential +</strong>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Bonus: SME Growth Playbook (₦15k value)
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            5 additional business templates
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Access to private Facebook group
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Monthly Q&A webinars
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Email support for 30 days
+                        </li>
+                    </ul>
+                    <button onclick="selectPackage('premium')" class="w-full bg-yellow-400 text-brand-purple-dark py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors">
+                        Get Premium Plus
+                    </button>
+                </div>
+
+                <!-- VIP Package -->
+                <div class="bg-gradient-to-br from-brand-purple to-brand-purple-dark text-white rounded-xl shadow-lg p-8 border-2 border-brand-purple">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">VIP Coaching</h3>
+                        <div class="text-4xl font-bold text-yellow-300 mb-2">₦50,000</div>
+                        <p class="text-white/80">Personal guidance included</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <strong>Everything in Premium +</strong>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            1-hour one-on-one strategy session
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Personalized business audit
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Custom action plan for your SME
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Priority support for 90 days
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Direct WhatsApp access to expert
+                        </li>
+                    </ul>
+                    <button onclick="selectPackage('vip')" class="w-full bg-yellow-400 text-brand-purple-dark py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors">
+                        Get VIP Coaching
+                    </button>
+                </div>
+            </div>
+
+            <!-- Money Back Guarantee -->
+            <div class="text-center mt-12">
+                <div class="inline-flex items-center bg-green-100 text-green-800 px-6 py-3 rounded-full">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="font-semibold">30-Day Money-Back Guarantee</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                    What SME Owners Are Saying
+                </h2>
+            </div>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-brand-purple rounded-full flex items-center justify-center text-white font-bold">A</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Adebayo Ogundimu</h4>
+                            <p class="text-gray-600">Fashion Retailer, Lagos</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"This masterclass opened my eyes to so many gaps in my business. The finance module alone saved me from potential tax issues. Worth every naira!"</p>
+                    <div class="flex text-yellow-400 mt-3">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-brand-purple rounded-full flex items-center justify-center text-white font-bold">F</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Fatima Abdullahi</h4>
+                            <p class="text-gray-600">Food Business, Abuja</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"I implemented the systems from Module 1 and finally have time to focus on growing instead of just surviving. My revenue increased 40% in 3 months!"</p>
+                    <div class="flex text-yellow-400 mt-3">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-brand-purple rounded-full flex items-center justify-center text-white font-bold">C</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Chinedu Okoro</h4>
+                            <p class="text-gray-600">Tech Services, Port Harcourt</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"The legal module saved me from signing a terrible contract. The templates alone are worth the entire course fee. Highly recommended!"</p>
+                    <div class="flex text-yellow-400 mt-3">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="py-20 bg-red-50">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                    ⏰ Limited Time Offer Ends Soon!
+                </h2>
+                <p class="text-xl text-gray-700 mb-8">
+                    This special pricing is only available for the next 48 hours. After that, prices return to regular rates (₦15k, ₦35k, ₦75k respectively).
+                </p>
+                
+                <!-- Countdown Timer -->
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8 inline-block">
+                    <div class="text-lg font-semibold text-gray-700 mb-4">Offer expires in:</div>
+                    <div class="flex justify-center space-x-4" id="countdown">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-brand-purple" id="hours">47</div>
+                            <div class="text-sm text-gray-600">Hours</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-brand-purple" id="minutes">23</div>
+                            <div class="text-sm text-gray-600">Minutes</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-brand-purple" id="seconds">45</div>
+                            <div class="text-sm text-gray-600">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-yellow-100 border-l-4 border-yellow-500 p-6 mb-8">
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-yellow-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-yellow-700 font-semibold">
+                            Don't let another day pass struggling with the same business challenges. Take action now!
+                        </p>
+                    </div>
+                </div>
+                
+                <button onclick="scrollToPackages()" class="bg-brand-purple text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-purple-dark transition-all transform hover:scale-105 pulse-animation">
+                    Secure My Spot Now - Limited Time!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-6">
+                    Ready to Transform Your SME in Just 1 Hour?
+                </h2>
+                <p class="text-xl mb-8 text-white/90">
+                    Join thousands of successful SME owners who have already future-proofed their businesses with our proven 360° system.
+                </p>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 mb-8">
+                    <h3 class="text-2xl font-bold mb-4">🎯 What You'll Achieve Today:</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Clear business structure roadmap
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Financial control and clarity
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Legal protection strategies
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Digital transformation plan
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="scrollToPackages()" class="bg-yellow-400 text-brand-purple-dark px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all transform hover:scale-105 pulse-animation mb-4">
+                    Start My Business Transformation Now
+                </button>
+                
+                <p class="text-white/80">
+                    💳 Secure payment • 📱 Instant access • 🔒 30-day guarantee
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Infinite Essentials</h3>
+                    <p class="text-gray-400">Empowering SMEs across Nigeria with practical business solutions and expert guidance.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#curriculum" class="hover:text-white transition-colors">Curriculum</a></li>
+                        <li><a href="#packages" class="hover:text-white transition-colors">Packages</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>📧 hello@infiniteessentials.com</li>
+                        <li>📱 +234 (0) 123 456 7890</li>
+                        <li>🌐 www.infiniteessentials.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Infinite Essentials. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        function scrollToPackages() {
+            document.getElementById('packages').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Package selection
+        function selectPackage(packageType) {
+            const packages = {
+                basic: { name: 'Essential Access', price: '₦10,000' },
+                premium: { name: 'Premium Plus', price: '₦25,000' },
+                vip: { name: 'VIP Coaching', price: '₦50,000' }
+            };
+            
+            const selected = packages[packageType];
+            alert(`Great choice! You've selected the ${selected.name} package for ${selected.price}. Please pay ${selected.price} to 0487257510 GTB. Account Name is Pearl Ubani`);
+        }
+
+        // Countdown timer
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const endTime = now + (47 * 60 * 60 * 1000) + (23 * 60 * 1000) + (45 * 1000); // 47h 23m 45s from now
+            
+            setInterval(() => {
+                const currentTime = new Date().getTime();
+                const timeLeft = endTime - currentTime;
+                
+                const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+                
+                if (timeLeft < 0) {
+                    document.getElementById('countdown').innerHTML = '<div class="text-red-500 font-bold">Offer Expired!</div>';
+                }
+            }, 1000);
+        }
+
+        // Initialize countdown
+        updateCountdown();
+
+        // Add scroll animations
+        window.addEventListener('scroll', () => {
+            const elements = document.querySelectorAll('.floating');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                if (isVisible) {
+                    el.style.animationPlayState = 'running';
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97918fef01a29ef5',t:'MTc1Njg2Mzg2OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
